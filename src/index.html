@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Live/Dead Scientist Review</title>
+  <meta name="description" content="Point-annotation tool for scientist review of paired live/dead confocal microscopy images.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Scientist-reviewed reference set</p>
+        <h1>Live/Dead Cell Annotation</h1>
+      </div>
+      <div class="progress" aria-live="polite"><span id="regionProgress">Region 1 of 6</span><strong id="totalCount">0 labels</strong></div>
+    </header>
+
+    <section class="workspace">
+      <aside class="panel instructions">
+        <h2>Review protocol</h2>
+        <ol>
+          <li>Inspect the full region.</li>
+          <li>Choose a label.</li>
+          <li>Click once at each cell center.</li>
+          <li>Use Ambiguous when uncertain.</li>
+          <li>Export CSV after all six regions.</li>
+        </ol>
+        <p class="note">Green = Calcein-AM. Red = EthD-1. Do not force dim or overlapping signals into a category.</p>
+        <div class="legend">
+          <span><i class="live"></i>Live</span><span><i class="dead"></i>Dead</span>
+          <span><i class="ambiguous"></i>Ambiguous</span><span><i class="artifact"></i>Artifact</span>
+        </div>
+      </aside>
+
+      <section class="annotator" aria-label="Image annotation workspace">
+        <div class="region-heading">
+          <button id="previous" class="nav" type="button">← Previous</button>
+          <div><h2 id="regionTitle">Day 2 · Region 1</h2><p id="regionMeta">90 × 90 px selected field</p></div>
+          <button id="next" class="nav" type="button">Next →</button>
+        </div>
+
+        <div class="canvas-wrap">
+          <canvas id="annotationCanvas" width="720" height="720" aria-label="Combined green and red fluorescence crop"></canvas>
+        </div>
+
+        <div class="toolbar" role="group" aria-label="Annotation label">
+          <button class="label active" data-label="live" type="button"><span class="dot live"></span>Live <kbd>1</kbd></button>
+          <button class="label" data-label="dead" type="button"><span class="dot dead"></span>Dead <kbd>2</kbd></button>
+          <button class="label" data-label="ambiguous" type="button"><span class="dot ambiguous"></span>Ambiguous <kbd>3</kbd></button>
+          <button class="label" data-label="artifact" type="button"><span class="dot artifact"></span>Artifact <kbd>4</kbd></button>
+        </div>
+
+        <div class="actions">
+          <button id="undo" type="button">Undo last</button>
+          <button id="clearRegion" type="button">Clear region</button>
+          <button id="exportCsv" class="primary" type="button">Export annotations.csv</button>
+        </div>
+        <p class="status" id="regionCounts" aria-live="polite"></p>
+      </section>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

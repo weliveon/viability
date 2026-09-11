@@ -1,0 +1,10 @@
+region_id,day,region,reference_live,reference_dead,ambiguous_excluded,reference_viability_pct,model_live,model_dead,model_viability_pct
+day-2-region-1,2,1,89,28,12,76.1,119,40,74.8
+day-2-region-2,2,2,86,24,12,78.2,104,14,88.1
+day-8-region-1,8,1,56,18,4,75.7,66,13,83.5
+day-8-region-2,8,2,36,17,3,67.9,30,10,75.0
+day-12-region-1,12,1,74,9,2,89.2,55,6,90.2
+day-12-region-2,12,2,56,10,1,84.8,42,4,91.3
+DAY_TOTAL,2,,175,52,24,77.1,223,54,80.5
+DAY_TOTAL,8,,92,35,7,72.4,96,23,80.7
+DAY_TOTAL,12,,130,19,3,87.2,97,10,90.7

@@ -1,0 +1,62 @@
+[
+  {
+    "id": "day-2-region-1",
+    "day": 2,
+    "region": 1,
+    "image": "assets/day_2_region_1.png",
+    "source_x": 30,
+    "source_y": 80,
+    "width": 90,
+    "height": 90
+  },
+  {
+    "id": "day-2-region-2",
+    "day": 2,
+    "region": 2,
+    "image": "assets/day_2_region_2.png",
+    "source_x": 130,
+    "source_y": 10,
+    "width": 90,
+    "height": 90
+  },
+  {
+    "id": "day-8-region-1",
+    "day": 8,
+    "region": 1,
+    "image": "assets/day_8_region_1.png",
+    "source_x": 90,
+    "source_y": 30,
+    "width": 90,
+    "height": 90
+  },
+  {
+    "id": "day-8-region-2",
+    "day": 8,
+    "region": 2,
+    "image": "assets/day_8_region_2.png",
+    "source_x": 60,
+    "source_y": 100,
+    "width": 90,
+    "height": 90
+  },
+  {
+    "id": "day-12-region-1",
+    "day": 12,
+    "region": 1,
+    "image": "assets/day_12_region_1.png",
+    "source_x": 130,
+    "source_y": 10,
+    "width": 90,
+    "height": 90
+  },
+  {
+    "id": "day-12-region-2",
+    "day": 12,
+    "region": 2,
+    "image": "assets/day_12_region_2.png",
+    "source_x": 0,
+    "source_y": 110,
+    "width": 90,
+    "height": 90
+  }
+]
